@@ -20,7 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         Root
         <h1>{clientFolder.clientJSON.title}</h1>
-        {/* <Card /> */}
+        <button>new button</button>
       </main>
 
     </div>
