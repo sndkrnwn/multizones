@@ -3,7 +3,7 @@ const { CLIENT_URL } = process.env;
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath="/",
+  basePath="/root",
   assetPrefix: "client/",
   async rewrites() {
     return [
