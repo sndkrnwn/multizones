@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -6,6 +6,9 @@ import styles from '../styles/Home.module.css'
 import cardJSON from './../../client/config/clientConfig.json'  assert {type: 'json'};
 export default function Home() { 
   const [clientFolder, setClientFolder] = useState(cardJSON);
+  useEffect(()=>{
+    setClientFolder(cardJSON);
+  }, [cardJSON])
   return (
     <div className={styles.container}>
       <Head>
