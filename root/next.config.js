@@ -4,23 +4,23 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   basePath="/root",
-  assetPrefix: "client/",
-  async rewrites() {
-    return [
-      {
-        source: "/:path*",
-        destination: `/:path*`,
-      },
-      {
-        source: "/client",
-        destination: `${CLIENT_URL}/client`,
-      },
-      {
-        source: "/client/:path*",
-        destination: `${CLIENT_URL}/client/:path*`,
-      },
-    ];
-  },
+  // assetPrefix: "client/",
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/:path*",
+  //       destination: `/:path*`,
+  //     },
+  //     {
+  //       source: "/client",
+  //       destination: `${CLIENT_URL}/client`,
+  //     },
+  //     {
+  //       source: "/client/:path*",
+  //       destination: `${CLIENT_URL}/client/:path*`,
+  //     },
+  //   ];
+  // },
 }
 
 module.exports = nextConfig

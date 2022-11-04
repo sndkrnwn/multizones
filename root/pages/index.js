@@ -1,8 +1,11 @@
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
-export default function Home() {
+//Client Folder
+import cardJSON from './../../client/config/clientConfig.json'  assert {type: 'json'};
+export default function Home() { 
+  const [clientFolder, setClientFolder] = useState(cardJSON);
   return (
     <div className={styles.container}>
       <Head>
@@ -13,6 +16,8 @@ export default function Home() {
 
       <main className={styles.main}>
         Root
+        <h1>{clientFolder.clientJSON.title}</h1>
+        {/* <Card /> */}
       </main>
 
     </div>
