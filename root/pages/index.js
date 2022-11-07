@@ -21,6 +21,7 @@ export default function Home() {
         Root
         <h1>{clientFolder.clientJSON.title}</h1>
         <button>new button</button>
+        <button>new button 2</button>
       </main>
 
     </div>
