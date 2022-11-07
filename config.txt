@@ -1,0 +1,5 @@
+DEVELOP_BRANCH="develop"
+REMOTE_REPO="https://github.com/sndkrnwn/multizones.git"
+LOCAL_REPO="local"
+WORKSPACE="./multizones"
+RULE="master>develop"
