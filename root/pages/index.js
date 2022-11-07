@@ -18,10 +18,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        Develop
+        Content
         <h1>{clientFolder.clientJSON.title}</h1>
-        <button>Button Develop</button>
-        <a href="https://github.com/pjq/auto_sync_branch">click</a>
+        <button>Button</button>
       </main>
 
     </div>
