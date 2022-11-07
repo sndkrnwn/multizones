@@ -1,0 +1,5 @@
+DEVELOP_BRANCH="develop"
+REMOTE_REPO="https://github.com/pjq/auto_sync_branch.git"
+LOCAL_REPO="local"
+WORKSPACE="./auto_sync_branch_workspace"
+RULE="master>develop|develop>pjq/develop|pjq/develop>user/develop"
