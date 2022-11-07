@@ -1,0 +1,4 @@
+[alias]
+    sync = "!sh -c 'git checkout --quiet --detach HEAD && \
+                    git fetch origin master:master client-a:client-a ; \
+                    git checkout --quiet -'"
