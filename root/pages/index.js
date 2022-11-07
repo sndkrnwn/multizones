@@ -20,9 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         Root
         <h1>{clientFolder.clientJSON.title}</h1>
-        <button>new button</button>
-        <button>new button 2</button>
-        <button>new button 3</button>
+        <button>Button Master</button>
       </main>
 
     </div>
