@@ -62,22 +62,22 @@ function sync_one_rule {
 }
 
 # prepare the `clean` workspace and clone the repo
-function prepare_workspace {
-    echo "Prepare the workspace..."
-    [ -d ${WORKSPACE} ] || mkdir -p ${WORKSPACE}
-    cd ${WORKSPACE}
-    [ ! -z ${WORKSPACE} ] && [ ! -z "${LOCAL_REPO}" ] && [ -d ${LOCAL_REPO} ] &&  rm -rf ${LOCAL_REPO} 
-    git clone -b ${DEVELOP_BRANCH} ${REMOTE_REPO} ${LOCAL_REPO}
-    cd ${LOCAL_REPO}
-}
+# function prepare_workspace {
+#     echo "Prepare the workspace..."
+#     [ -d ${WORKSPACE} ] || mkdir -p ${WORKSPACE}
+#     cd ${WORKSPACE}
+#     [ ! -z ${WORKSPACE} ] && [ ! -z "${LOCAL_REPO}" ] && [ -d ${LOCAL_REPO} ] &&  rm -rf ${LOCAL_REPO} 
+#     git clone -b ${DEVELOP_BRANCH} ${REMOTE_REPO} ${LOCAL_REPO}
+#     cd ${LOCAL_REPO}
+# }
 
 function read_config {
     echo "read config..."
     RULE=`cat ${CONFIG}|grep RULE|sed "s/ //g"|cut -d "=" -f2|sed "s/\"//g"|sed "s/|/ /g"`
     DEVELOP_BRANCH=`cat ${CONFIG}|sed "s/ //g"|grep DEVELOP_BRANCH|cut -d "=" -f2|sed "s/\"//g"`
     REMOTE_REPO=`cat ${CONFIG}|sed "s/ //g"|grep REMOTE_REPO|cut -d "=" -f2|sed "s/\"//g"`
-    LOCAL_REPO=`cat ${CONFIG}|sed "s/ //g"|grep LOCAL_REPO|cut -d "=" -f2|sed "s/\"//g"`
-    WORKSPACE=`cat ${CONFIG}|sed "s/ //g"|grep WORKSPACE|cut -d "=" -f2|sed "s/\"//g"`
+    # LOCAL_REPO=`cat ${CONFIG}|sed "s/ //g"|grep LOCAL_REPO|cut -d "=" -f2|sed "s/\"//g"`
+    # WORKSPACE=`cat ${CONFIG}|sed "s/ //g"|grep WORKSPACE|cut -d "=" -f2|sed "s/\"//g"`
 }
 
 function start_sync {
@@ -90,5 +90,5 @@ function start_sync {
 }
 
 read_config
-prepare_workspace
+# prepare_workspace
 start_sync
