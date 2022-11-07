@@ -20,7 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         Content
         <h1>{clientFolder.clientJSON.title}</h1>
-        <button>Button</button>
+        <button style={{backgroundColor: "red"}}>Button</button>
       </main>
 
     </div>
