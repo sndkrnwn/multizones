@@ -22,7 +22,7 @@ export default function Home() {
         <h1>{clientFolder.clientJSON.title}</h1>
         <button style={{backgroundColor: "red", padding: '.5rem', color: 'white'}}>Button</button>
         <br />
-        {/* <button style={{backgroundColor: "blue", padding: '.5rem', color: 'white'}}>New Button</button> */}
+        <button style={{backgroundColor: "blue", padding: '.5rem', color: 'white'}}>New Button</button>
       </main>
 
     </div>
