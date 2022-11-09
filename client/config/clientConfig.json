@@ -1,6 +1,6 @@
 {
     "clientJSON": {
-        "accountName": "Client A Staging",
-        "title": "From Client A Staging Branch"
+        "accountName": "Release",
+        "title": "From Release Branch"
     }
 }
