@@ -23,6 +23,8 @@ export default function Home() {
         <button style={{backgroundColor: "red", padding: '.5rem', color: 'white'}}>Button</button>
         <br />
         <button style={{backgroundColor: "blue", padding: '.5rem', color: 'white'}}>New Button</button>
+        <br />
+        <button style={{backgroundColor: "blue", padding: '.5rem', color: 'white'}}>Button test</button>
       </main>
 
     </div>
